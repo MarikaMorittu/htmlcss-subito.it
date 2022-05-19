@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- ROBOTO FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
   <body>
     <header>
@@ -29,108 +40,388 @@
           <a href="#">Registrati</a>
         </div>
         <div class="button">
+          <span class="add-simbol material-symbols-outlined"> add_box </span>
           <a href="#"><strong>Inserisci un annuncio</strong></a>
         </div>
       </div>
     </header>
     <main>
-      <div class="search-section">
-        <div class="search">
-          <h5>Cosa cerchi?</h5>
-          <input type="text" placeholder="Vespa,iPhone,Bilicale" />
-        </div>
-        <div class="search">
-          <h5>In quale categoria</h5>
-          <input type="text" placeholder="Tutta le categorie &or;" />
-        </div>
-        <div class="search">
-          <h5>Dove?</h5>
-          <input type="text" placeholder="Tutta Italia" />
-        </div>
-        <button></button>
-      </div>
-      <div class="explore">
-        <h2>Esplora le nostre sezioni</h2>
-      </div>
-      <div class="row-section">
-        <div class="single-section motori">
-          <div class="img">
-            <img src="./img/motori-desktop-white.svg" alt="motori" />
+      <div class="box1">
+        <div class="search-section">
+          <div class="search">
+            <h5>Cosa cerchi?</h5>
+            <div class="container-input">
+              <span class="material-symbols-outlined"> search </span>
+              <input type="text" placeholder="Vespa,iPhone,Bilicale" />
+            </div>
           </div>
-          <button class="bt motori">Cerca in motori</button>
-        </div>
-        <div class="single-section market">
-          <div class="img">
-            <img src="./img/motori-desktop-white.svg" alt="motori" />
+          <div class="search">
+            <h5>In quale categoria</h5>
+            <div class="container-input">
+              <span class="material-symbols-outlined"> grid_view </span>
+              <input type="text" placeholder="Tutta le categorie " />
+            </div>
           </div>
-          <button class="bt market">Cerca in motori</button>
-        </div>
-        <div class="single-section immobili">
-          <div class="img">
-            <img src="./img/motori-desktop-white.svg" alt="motori" />
+          <div class="search">
+            <h5>Dove?</h5>
+            <div class="container-input">
+              <span class="material-symbols-outlined"> pin_drop </span>
+              <input type="text" placeholder="Tutta Italia" />
+            </div>
           </div>
-          <button class="bt immobili">Cerca in motori</button>
-        </div>
-        <div class="single-section lavoro">
-          <div class="img">
-            <img src="./img/motori-desktop-white.svg" alt="motori" />
-          </div>
-          <button class="bt lavoro">Cerca in motori</button>
-        </div>
-      </div>
-      <div class="tutto-subito">
-        <div class="ts message">
-          <h2>Prova tutto subito</h2>
-          <p>
-            il nosto servizio di <strong>pagamento sicuro</strong>e
-            <strong>spedizione integrata</strong>
-          </p>
-          <a href="#">Scopri</a>
-        </div>
-        <div class="ts img-ts pay">
-          <img src="./img/pay.webp" alt="" />
-          <a href="">Paga in sicurezza</a>
-        </div>
-        <div class="ts img-ts sell">
-          <img src="./img/sell.webp" alt="" />
-          <a href="">Vendi gratis</a>
-        </div>
-      </div>
-      <div class="comincia-guadagnare">
-        <div class="cg">
-          <img src="./img/001_DESKTOP_inserisciannuncio.jpg" alt="" />
-        </div>
-        <div class="cg message">
-          <h2>Comincia a guadagnare</h2>
-          <p>
-            Dai al tuo usato una seconda occasione: vendi quello che non usi
-            più, subito.
-          </p>
-        </div>
-        <div class="cg">
-          <div class="button">
-            <a href="#"><strong>Inserisci un annuncio</strong></a>
+          <div class="button-search">
+            <span class="material-symbols-outlined"> search </span>
           </div>
         </div>
-      </div>
-      <div class="info1">
-        <img class="inf" src="./img/HP_BOX_earth_day_20220426.jpg" alt="" />
-        <div class="inf">
-          <a href="#">Subito</a>
-          <h2>La secon hand non è una seconda scelta</h2>
-          <p>Fai la scelta giusta per te e per il pianeta</p>
+        <div class="explore">
+          <h2>Esplora le nostre sezioni</h2>
+        </div>
+        <div class="row-section">
+          <div class="single-section motori">
+            <div class="img">
+              <img src="./img/motori-desktop-white.svg" alt="motori" />
+            </div>
+            <button class="bt motori">Cerca in motori</button>
+          </div>
+          <div class="single-section market">
+            <div class="img">
+              <img src="./img/motori-desktop-white.svg" alt="motori" />
+            </div>
+            <button class="bt market">Cerca in motori</button>
+          </div>
+          <div class="single-section immobili">
+            <div class="img">
+              <img src="./img/motori-desktop-white.svg" alt="motori" />
+            </div>
+            <button class="bt immobili">Cerca in motori</button>
+          </div>
+          <div class="single-section lavoro">
+            <div class="img">
+              <img src="./img/motori-desktop-white.svg" alt="motori" />
+            </div>
+            <button class="bt lavoro">Cerca in motori</button>
+          </div>
+        </div>
+        <div class="tutto-subito">
+          <div class="ts message">
+            <h2>Prova tutto subito</h2>
+            <p>
+              il nosto servizio di <strong>pagamento sicuro</strong>e
+              <strong>spedizione integrata</strong>
+            </p>
+            <a href="#">Scopri</a>
+          </div>
+          <div class="ts-img section">
+            <div class="ts img-ts pay">
+              <a href="">Paga in sicurezza</a>
+            </div>
+            <div class="ts img-ts sell">
+              <a href="">Vendi gratis</a>
+            </div>
+          </div>
+        </div>
+        <div class="comincia-guadagnare">
+          <div class="cg">
+            <img src="./img/001_DESKTOP_inserisciannuncio.jpg" alt="" />
+          </div>
+          <div class="cg message">
+            <h2>Comincia a guadagnare</h2>
+            <p>
+              Dai al tuo usato una seconda occasione: vendi quello che non usi
+              più, subito.
+            </p>
+          </div>
+          <div class="cg">
+            <div class="button">
+              <span class="add-simbol material-symbols-outlined">
+                add_box
+              </span>
+              <a href="#"><strong>Inserisci un annuncio</strong></a>
+            </div>
+          </div>
+        </div>
+        <div class="information">
+          <a class="information" href="#">
+            <div class="info immage1"></div>
+            <div class="info message">
+              <div class="inf-message">
+                <h4>Subito</h4>
+                <h2>La secon hand non è una seconda scelta</h2>
+                <p>Fai la scelta giusta per te e per il pianeta</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="information">
+          <a class="information" href="#">
+            <div class="info immage2"></div>
+            <div class="info message">
+              <div class="inf-message">
+                <h2>ADL 2Life partner di subito</h2>
+                <p>
+                  Se l'auto che cerchi non è disponibile, noi abbiamo la
+                  soluzione
+                </p>
+                <h5>Vai all'articolo</h5>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
-      <div class="info2">
-        <img class="inf" src="./img/ald-2life.png" alt="" />
-        <div class="inf">
-          <h2>ADL 2Life partner di subito</h2>
-          <p>
-            Se l'auto che cerchi non è disponibile, noi abbiamo la soluzione
-          </p>
-          <a href="#">Vai al sito</a>
+
+      <div class="affari-sicuri">
+        <div>
+          <h2>Rendiamo sicuri i tuoi affari</h2>
+        </div>
+        <div class="affari-sicuri-img">
+          <a class="af box1" href="">
+            <div class="af-text">
+              <h4>Consigli: i tuoi affari in sicurezza</h4>
+              <p>Scopri di più</p>
+            </div>
+          </a>
+          <a class="af box2" href="">
+            <div class="af-text">
+              <h4>Le truffe come riconoscerle</h4>
+              <p>Scopri di più</p>
+            </div>
+          </a>
+          <a class="af box3" href="">
+            <div class="af-text">
+              <h4>Crea un profilo autentico</h4>
+              <p>Scopri di più</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="box2">
+        <div class="scarica-app">
+          <section class="app-section">
+            <h2>Scarica l'App ufficiale di Subito</h2>
+            <p>
+              Cerca tra migliaia di annunci e inserisci i tuoi, ovunque tu sia.
+            </p>
+            <div class="icons-section">
+              <div>
+                <a href="#"><img src="./img/google-play-badge.svg" alt="" /></a>
+              </div>
+              <div>
+                <a href="#"><img src="./img/app-store-badge.svg" alt="" /></a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="scopri-di-piu">
+        <div class="scopri-title"><strong>Scopri di più</strong></div>
+        <div>
+          <h5 class="title t-motori">Motori</h5>
+          <div class="container1">
+            <a href="#">Auto usate</a> - <a href="#">Moto usate</a> -
+            <a href="#">Auto eletriche usate</a> -
+            <a href="#">Auto ibride usate</a> -
+            <a href="#">Auto disel usate</a> - <a href="#">Ford</a> -
+            <a href="#">Mercedes</a> - <a href="#">Opel</a> -
+            <a href="#">Alfa Romeo</a> - <a href="#">Jeep</a> -
+            <a href="#">Hundai</a> - <a href="#">Toyota</a> -
+            <a href="#">Ducati</a> - <a href="#">Harley Devidson</a> -
+            <a href="#">Honda</a> - <a href="#">Kawasaki</a> -
+            <a href="#">KTM</a> - <a href="#">Piaggio</a> -
+            <a href="#">Suzuki</a> -
+            <a href="#">Aprilia</a>
+          </div>
+          <div class="container1">
+            <a class="sec-tit" href="#"><strong>Fiat</strong></a>
+            <a href="#">Fiat 500</a> - <a href="#">Fiat Panda</a> -
+            <a href="#">Fiat Doblo</a> - <a href="#">Fiat Punto</a> -
+            <a href="#">Fiat 600</a> - <a href="#">Fiat Tipo</a> -
+            <a href="#">Fiat 500l</a> - <a href="#">Fiat Panda 4x4</a> -
+            <a href="#">Fiat Scudo</a> -
+            <a href="#">Fiat Ducato</a>
+          </div>
+          <div class="container1">
+            <a class="sec-tit" href="#"><strong>Renault</strong></a>
+            <a href="#">Renault Captur</a> - <a href="#">Renault Clio</a> -
+            <a href="#">Renault Kadjar</a> - <a href="#">Renault Trafic</a> -
+            <a href="#">Renault Twingo</a> - <a href="#">Renault Kangoo</a> -
+            <a href="#">Renault Scenic</a> - <a href="#">Renault 4</a> -
+            <a href="#">Renault Megane</a> -
+            <a href="#">Renault Zoe</a>
+          </div>
+          <div class="container1">
+            <a class="sec-tit" href="#"><strong>Peugeot</strong></a>
+            <a href="#">Peujeot 3008</a> - <a href="#">Peugeot 208</a> -
+            <a href="#">Peugeot 2008</a> - <a href="#">Peugeot 308</a> -
+            <a href="#">Peugeo 5008</a> - <a href="#">Peugeot 107</a> -
+            <a href="#">Peugeo Rifter</a> - <a href="#">Peugeot Partner</a> -
+            <a href="#">Peugeot 207</a> -
+            <a href="#">Peugeot Traveller</a>
+          </div>
+          <div class="container1">
+            <a class="sec-tit" href="#"><strong>BMW</strong></a>
+            <a href="#">BMW X1</a> - <a href="#">BMW serie 1</a> -
+            <a href="#">BMW x3</a> - <a href="#">BMW Motorrad</a> -
+            <a href="#">BMW x4</a> - <a href="#">BMW z4</a> -
+            <a href="#">BMW x2</a> - <a href="#">BMW serie 3</a> -
+            <a href="#">BMW x5</a>
+          </div>
+          <div class="container1">
+            <a class="sec-tit" href="#"><strong>Volkdswagen</strong></a>
+            <a href="#">Volkdswagen Polo</a> -
+            <a href="#">Volkdswagen Tiguan</a> -
+            <a href="#">Volkdswagen Up</a> - <a href="#">Volkdswagen Golf</a> -
+            <a href="#">Volkdswagen California</a> -
+            <a href="#">Volkdswagen T roc</a> -
+            <a href="#">Volkdswagen Transporter</a> -
+            <a href="#">Volkdswagen T cross</a> -
+            <a href="#">Volkdswagen Caddy</a> -
+            <a href="#">Volkdswagen Passat</a>
+          </div>
+          <div class="container1">
+            <a class="sec-tit" href="#"><strong>Audi</strong></a>
+            <a href="#">Audi A1</a> - <a href="#">Audi A3</a> -
+            <a href="#">Audi Q3</a> - <a href="#">Audi TT</a> -
+            <a href="#">Audi A4</a> - <a href="#">Audi Q2</a> -
+            <a href="#">Audi A5</a> - <a href="#">Audi A6</a> -
+            <a href="#">Audi Q3 Sportback</a>
+          </div>
+        </div>
+        <div>
+          <h5 class="title t-market">market</h5>
+          <div class="container1">
+            <a href="#">Gatto</a> - <a href="#">Golden retriever</a> -
+            <a href="#">Bulldog francese</a> - <a href="#">Cani</a> -
+            <a href="#">Border collie</a> - <a href="#">Labrador</a> -
+            <a href="#">Pitbull</a> - <a href="#">Bici pieghevole</a> -
+            <a href="#">Bici eletrica pieghevole</a> -
+            <a href="#">Bici da corsa usate</a> -
+            <a href="#">Bicicletta pedalata assistita</a> -
+            <a href="#">Accessori bici</a> - <a href="#">Cyclette usata</a> -
+            <a href="#">Ikea armadi</a> - <a href="#">Scafali ikea</a> -
+            <a href="#">Poltrona frau</a> -
+            <a href="#">Libreria scolastica</a> - <a href="#">Sedie usate</a> -
+            <a href="#">Cellulari usati</a> - <a href="#">Iphone usati</a> -
+            <a href="#">Smartphone usati</a> -
+            <a href="#">Cellulari usati Milano</a>
+          </div>
+        </div>
+        <div>
+          <h5 class="title t-immobili">immobili</h5>
+          <div class="container1">
+            <a href="#">Case in vendita</a> - <a href="#">Case in affitto</a> -
+            <a href="#">Case in vendita Bolzano</a> -
+            <a href="#">Rent to buy</a> - <a href="#">Affitto Roma</a> -
+            <a href="#">Affitto Milano</a> -
+            <a href="#">Case in vendita Genova</a> -
+            <a href="#">Case in vendita Bologna</a> -
+            <a href="#">Affitti Torino</a> -
+            <a href="#">Monolocale affitto Milano</a> -
+            <a href="#">Vendita case Lodi</a> -
+            <a href="#">Affitti Palermo</a> - <a href="#">Affitto Bolzano</a> -
+            <a href="#">Appartamenti in vendita Milano</a> -
+            <a href="#">Affitto Genova</a> -
+            <a href="#">Appartamenti in vendita a Palermo</a> -
+            <a href="#">Appartamenti in vendita Roma</a> -
+            <a href="#">Affitti Napoli</a> -
+            <a href="#">Appartamenti in vendita a Torino</a> -
+            <a href="#">Case in vendita Napoli centro</a> -
+          </div>
+        </div>
+        <div>
+          <h5 class="title t-lavoro">lavoro</h5>
+          <div class="container1">
+            <a href="#">Offerte di lavoro</a> -
+            <a href="#">Stagione estiva</a> - <a href="#">Lavoro Roma</a> -
+            <a href="#">Lavoro da casa</a> -
+            <a href="#">Offerte lavoro Torino</a> -
+            <a href="#">Lavoro Milano</a> - <a href="#">Lavoro Palermo</a> -
+            <a href="#">Offerte lavoro Bergamo</a> -
+            <a href="#">Lavoro Bologna</a> - <a href="#">Lavoro Napoli</a> -
+            <a href="#">Lavoro online</a> -
+            <a href="#">Operatore socio sanitario</a> -
+            <a href="#">Benzinaio</a> - <a href="#">Muratore</a> -
+            <a href="#">Lavoro Lecco</a> - <a href="#">Lavoro Pisa</a> -
+            <a href="#">Receptionist</a> - <a href="#">Lavoro part time</a> -
+            <a href="#">Agente Immobiliare</a> -
+            <a href="#">Assistente amministrativo</a> -
+            <a href="#">Carpentiere</a> - <a href="#">Rappresentante</a> -
+            <a href="#">Pulizie</a> - <a href="#">Steward</a> -
+            <a href="#">Catena di montaggio</a> - <a href="#">Segretaria</a> -
+            <a href="#">Lavoro part time Roma </a> -
+            <a href="#">Carrozziere</a> - <a href="#">Barista </a> -
+            <a href="#">Operaio</a> - <a href="#">Cameriere</a> -
+            <a href="#">Lavoro part time Milano</a> -
+            <a href="#">Badante convivente</a> -
+            <a href="#">Baby sitter Milano</a> - <a href="#">Badante Roma</a> -
+            <a href="#">Cameriera ai piani</a> - <a href="#">Stage Milano</a> -
+            <a href="#">Badante Milano</a> - <a href="#">Stage Torino</a> -
+          </div>
         </div>
       </div>
     </main>
+    <footer>
+      <div class="links">
+        <div>
+          <h5>Subito</h5>
+          <ul>
+            <li class="link">
+              <a href="#">Aiuto</a>
+              <a href="#">Regole</a>
+              <a href="#">Sicurezza</a>
+              <a href="#">Condizioni</a>
+              <a href="#">Privacy</a>
+              <a href="#">Gestisci cookies</a>
+              <a href="#">TuttoSubito Vendi</a>
+              <a href="#">TuttoSubito Compra</a>
+              <a href="#">Servizio TuttoSubito</a>
+              <a href="#">Inserisci annuncio</a>
+              <a href="#">Promuovi annuncio</a>
+              <a href="#">Consigli per la vendita</a>
+              <a href="#">Negozi e Aziende</a>
+              <a href="#">Subito per le aziende</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li class="link">
+              <a href="#"></a>
+              <a href="#">Chi siamo</a>
+              <a href="#">Lavora con noi</a>
+              <a href="#">Sostenibilità</a>
+              <a href="#">Magazine</a>
+              <a href="#">InfoJobs</a>
+              <a href="#">Mappa del sito</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h5>Seguici su</h5>
+          <ul>
+            <li class="link">
+              <a href="#">Facebook</a>
+              <a href="#">Instagram</a>
+              <a href="#">Twitter</a>
+              <a href="#">You Tube</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h5>Scarica gratis l'App</h5>
+          <ul>
+            <li class="link">
+              <a href="#">Subito per Android</a>
+              <a href="#">Subito per iOS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <img src="./img/grey-short.svg" alt="grey" />
+        <p>&copy;2022 Subito.it - P.IVA 05526340962</p>
+      </div>
+    </footer>
   </body>
 </html>
