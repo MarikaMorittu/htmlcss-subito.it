@@ -9,33 +9,57 @@ body {
   width: 980px;
   margin: 0 auto;
 }
+/* UTILITIES */
+p {
+  font-size: 14px;
+  color: #717e8f;
+}
+li {
+  list-style: none;
+  padding: 8px 8px;
+}
+ul {
+  display: flex;
+}
+a {
+  text-decoration: none;
+  font-size: 14px;
+}
 /* HEADER */
-header {
+.header {
   width: 100%;
   margin: 0 auto 32px;
 }
 /* NAVBAR */
-nav {
+.nav {
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
-nav ul {
-  display: flex;
-  padding-right: 20px;
-}
-nav ul li {
-  list-style: none;
-  padding: 8px 8px;
-}
-nav ul li a {
-  text-decoration: none;
+.nav ul li a {
   color: #717e8f;
-  font-size: 14px;
   border-right: 1px solid #717e8f;
   padding-right: 10px;
 }
-
+.nav2 {
+  width: 100%;
+  border-bottom: 1px solid #dfe3ed;
+  display: flex;
+  justify-content: space-around;
+  z-index: 99;
+  padding: 4px;
+  display: none;
+}
+.icons .material-symbols-outlined {
+  color: #b0bbc7;
+  padding: 0 12px;
+  text-align: center;
+}
+.icons p {
+  text-align: center;
+  color: #b0bbc7;
+  font-size: 12px;
+}
 /* LOGO */
 .container {
   border-top: 1px solid #dfe3ed;
@@ -49,20 +73,27 @@ nav ul li a {
 .container img {
   width: 230px;
 }
+
 /* Menu */
 .menu {
   margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 .menu a {
-  text-decoration: none;
   color: #000;
   padding-right: 24px;
+}
+.cont-menu {
+  display: flex;
 }
 /* button */
 .button span {
   color: red;
 }
-
+.button {
+  color: red;
+}
 .button {
   background: rgba(255, 0, 0, 0.15);
   height: 40px;
@@ -77,7 +108,6 @@ nav ul li a {
 }
 .button a {
   color: red;
-  text-decoration: none;
 }
 .box1 {
   width: 940px;
@@ -87,14 +117,15 @@ nav ul li a {
 .search-section {
   display: flex;
   width: 100%;
-  margin: 0 auto 24px;
+  margin: 64px auto 24px;
   justify-content: space-around;
   border: 1px solid #dfe3ed;
   border-radius: 4px;
   padding: 16px 24px;
+  box-shadow: 0 10px 24px 0 rgba(0, 0, 0, 0.1);
 }
 .search span {
-  color: #7a7c7f;
+  color: #3c4858;
 }
 .container-input {
   display: flex;
@@ -109,19 +140,25 @@ nav ul li a {
   border-radius: 4px;
   background: #f9423a;
   align-self: flex-end;
+  display: flex;
 }
 .material-symbols-outlined {
-  /* icona search */
   padding: 12px 20px;
   color: #fff;
 }
 .search-section input {
   border: 1px solid transparent;
   width: 100%;
-  padding: 0 12px;
+}
+.search h2 {
+  display: none;
 }
 .search h5 {
   padding: 0 4px 12px;
+  color: #3c4858;
+}
+.button-search .p {
+  color: #fff;
 }
 .explore {
   display: flex;
@@ -164,12 +201,17 @@ nav ul li a {
 .img img {
   margin: 20px 28px;
 }
-.single-section button {
+.single-section a {
   width: 100%;
   height: 32px;
   color: #fff;
   border: 1px solid #fff;
   border-radius: 5px;
+  text-align: center;
+  line-height: 32px;
+}
+.single-section .bt:hover {
+  background-color: hsla(0, 0%, 100%, 0.25);
 }
 /* TUTTO SUBITO */
 .tutto-subito {
@@ -183,9 +225,7 @@ nav ul li a {
   width: calc(100% / 3);
   margin-left: 16px;
 }
-.ts p {
-  color: #717e8f;
-}
+
 .ts-img.section {
   width: 100%;
   display: flex;
@@ -286,9 +326,6 @@ nav ul li a {
   color: #3c4858;
   padding: 12px 0;
 }
-.inf-message p {
-  color: #717e8f;
-}
 .inf-message h4 {
   text-transform: uppercase;
   color: red;
@@ -323,7 +360,6 @@ nav ul li a {
 }
 .af p {
   color: #fa7772;
-  /* margin-top: 12px; */
   padding: 8px 12px;
 }
 .af {
@@ -368,10 +404,6 @@ nav ul li a {
   font-size: 18px;
   color: #3c4858;
   padding: 12px;
-}
-.app-section p {
-  color: #808c9b;
-  font-size: 14px;
 }
 .icons-section {
   padding: 12px;
@@ -454,7 +486,95 @@ footer {
   width: 136px;
   height: 32px;
 }
-.footer-bottom p {
-  margin: 20px 0;
-  font-size: 14px;
+/*  MEDIA QUERY */
+/* 978px */
+@media screen and (max-width: 978px) {
+  /* HEADER */
+  .header {
+    margin: 0;
+  }
+  .nav {
+    display: none;
+  }
+  .nav2 {
+    display: flex;
+  }
+  .cont-menu {
+    display: none;
+  }
+  .container {
+    display: block;
+    padding: 64px 12px 0;
+    border-bottom: none;
+    text-align: center;
+    line-height: 42px;
+  }
+  /* SEARCH SECTION */
+  .search-section {
+    border: none;
+    box-shadow: none;
+    margin: 16px auto;
+  }
+  .container img {
+    width: 205px;
+    height: 32px;
+  }
+
+  /* EXPLORE */
+  .explore h2 {
+    font-size: 16px;
+  }
+}
+/* 767px */
+@media screen and (max-width: 767px) {
+  .search-section {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .search h5 {
+    display: none;
+  }
+  .search {
+    padding: 12px 0;
+  }
+  .search h2 {
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    padding: 12px;
+  }
+  .button-search {
+    width: 100%;
+  }
+  .button-search span {
+    display: none;
+  }
+  .button-search p {
+    line-height: 48px;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+  /* ROW SECTION */
+
+  .single-section {
+    min-height: 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+  .single-section a {
+    display: none;
+  }
+  /* INFORMATION */
+  .information {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  /* SCARICA L'APP */
+  .icons-section {
+    display: block;
+    padding-top: 24px;
+    text-align: center;
+  }
 }
